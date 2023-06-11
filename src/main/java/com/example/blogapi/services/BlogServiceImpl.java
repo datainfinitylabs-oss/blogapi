@@ -1,9 +1,12 @@
 package com.example.blogapi.services;
 
 import com.example.blogapi.models.Blog;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+
+@Service
 public class BlogServiceImpl implements BlogService {
     private List<Blog> blogs;
 
