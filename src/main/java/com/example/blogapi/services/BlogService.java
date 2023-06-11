@@ -5,4 +5,5 @@ import java.util.*;
 public interface BlogService {
     List<Blog> getAllBlogs();
     Blog getBlogById(Long id);
+    void createBlog(Blog blog);
 }

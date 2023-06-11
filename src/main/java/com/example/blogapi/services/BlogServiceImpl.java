@@ -26,4 +26,9 @@ public class BlogServiceImpl implements BlogService {
     public Blog getBlogById(Long id) {
         return blogs.stream().filter(blog->blog.getId().equals(id)).findFirst().orElse(null);
     }
+
+    @Override
+    public void createBlog(Blog blog) {
+        blogs.add(blog);
+    }
 }
